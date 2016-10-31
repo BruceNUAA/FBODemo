@@ -16,7 +16,6 @@
 		E240354A1D94BDD100C8A525 /* FBODemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E24035491D94BDD100C8A525 /* FBODemoTests.m */; };
 		E24035551D94BDD100C8A525 /* FBODemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E24035541D94BDD100C8A525 /* FBODemoUITests.m */; };
 		E24035631D94BEF400C8A525 /* for_test.png in Resources */ = {isa = PBXBuildFile; fileRef = E24035621D94BEF400C8A525 /* for_test.png */; };
-		E24035651D94CC7600C8A525 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = E24035641D94CC7600C8A525 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +53,6 @@
 		E24035541D94BDD100C8A525 /* FBODemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBODemoUITests.m; sourceTree = "<group>"; };
 		E24035561D94BDD100C8A525 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E24035621D94BEF400C8A525 /* for_test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = for_test.png; sourceTree = "<group>"; };
-		E24035641D94CC7600C8A525 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,7 +107,6 @@
 				E24035331D94BDD100C8A525 /* AppDelegate.m */,
 				E24035351D94BDD100C8A525 /* ViewController.h */,
 				E24035361D94BDD100C8A525 /* ViewController.m */,
-				E24035641D94CC7600C8A525 /* README.md */,
 				E24035621D94BEF400C8A525 /* for_test.png */,
 				E24035381D94BDD100C8A525 /* Main.storyboard */,
 				E240353B1D94BDD100C8A525 /* Assets.xcassets */,
@@ -282,7 +279,6 @@
 			files = (
 				E24035371D94BDD100C8A525 /* ViewController.m in Sources */,
 				E24035341D94BDD100C8A525 /* AppDelegate.m in Sources */,
-				E24035651D94CC7600C8A525 /* README.md in Sources */,
 				E24035311D94BDD100C8A525 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
