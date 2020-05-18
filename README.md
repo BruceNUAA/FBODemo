@@ -85,11 +85,11 @@ ES来尽可能高效地控制GPU、混合层和切换帧缓存。
 4、新建帧缓存
 5、切换帧缓存为纹理对象
 GLuint colorTexture;
-# 1
+##### 1
 glGenTextures(1, &colorTexture);
 glBindTexture(GL_TEXTURE_2D, colorTexture);
 
-# 2
+##### 2
 glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S,
 GL_CLAMP_TO_EDGE);
 glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T,
@@ -99,14 +99,14 @@ GL_LINEAR);
 glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER,
 GL_LINEAR_MIPMAP_LINEAR);
 
-# 3
+##### 3
 glTexImage2D(GL_TEXTURE_2D,0,GL_RGBA,fboWidth,fboHeight,0,GL_RGBA,GL_UNSIGNED_BYTE,NULL);
 
-#4
+##### 4
 glGenFramebuffers(1, &fboName);
 glBindFramebuffer(GL_FRAMEBUFFER, fboName);
 
-#5
+##### 5
 glFramebufferTexture2D(GL_FRAMEBUFFER,
 GL_COLOR_ATTACHMENT0,
 GL_TEXTURE_2D, colorTexture, 0);
@@ -117,25 +117,25 @@ GL_TEXTURE_2D, colorTexture, 0);
 3、新建帧缓存
 4、切换帧缓存为渲染缓存
 
-#1
+##### 1
 glGenRenderbuffers(1, &colorRenderbuffer);
 glBindRenderbuffer(GL_RENDERBUFFER, colorRenderbuffer);
 
-#2
+##### 2
 glRenderbufferStorage(GL_RENDERBUFFER, GL_RGBA8_OES, viewport[2],viewport[3]);
 
-#3
+##### 3
 glGenFramebuffers(1, &framebuffer);
 glBindFramebuffer(GL_FRAMEBUFFER, framebuffer);
 
-#4
+##### 4
 glFramebufferRenderbuffer(GL_FRAMEBUFFER, GL_COLOR_ATTACHMENT0, GL_RENDERBUFFER, colorRenderbuffer);
 
 
 [OpenGL ES的渲染结果会放到帧缓存区，如何与视图的显示联系起来？]
 答案: CAEGLayer
 
-# CAEGLayer
+##### CAEGLayer
 OpenGL ES会有连接到层，与层分享数据的帧缓存，至少包括一个像素颜色渲染缓存。
 CAEAGLLyaer是CoreAnimation提供的标准层类之一，与OpenGL ES的帧缓存共享它的像素颜色
 库。与一个Core Animation共享内存的像素颜色渲染缓存在层调整大小时会自动调整大小。其他缓
